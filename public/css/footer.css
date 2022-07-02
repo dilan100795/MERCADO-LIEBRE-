@@ -1,0 +1,15 @@
+footer{
+    text-align: center;
+}
+
+footer .pieinfo{
+    padding: 40px 40px 25px;
+
+}
+
+footer .pieinfo .iconofooter{
+    color: var(--celeste);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
