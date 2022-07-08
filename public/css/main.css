@@ -1,32 +1,76 @@
-main{
-    width: 100%;
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
-main .banner img{
-  
-    width: 100%;
-    height: 100%;
+
+main .banner img {
+
+    display: none;
 }
-main section article{
-       
+
+main section article {
+    background-color: white;
     margin: 10px 0px;
 }
-main section article img{
+main section article .contenedor{
+    border-top: 1px solid var(--grisclaro);
+    padding: 15px;
+}
+main section article img {
     width: 100%;
 }
-main section h2{
-    font-size: var(--titulares);  
-}
-main section h3{
-    font-size: var(--precios); 
-    color: var(--grisoscuro); 
-}
-main section h4{
-    font-size: var(--descuentoydescripcion);  color: var(--grisoscuro);
+
+main section article .camion i{
+    color: var(--verde);
+    padding: 10px;
+    border: solid 1px var(--verde);
+    border-radius: 50%;
+    font-size: var(--cuerpo-de-texto);
 }
 
+main section article .precio {
+    font-size: var(--precios);
+    color: var(--grisoscuro);
+}
 
-main section h4:last-child{
+main section article .descuento {
+    font-size: var(--descuentoydescripcion);
+    color: var(--verde);
+}
+
+main section h2 {
+    font-size: var(--titulares);
+    color: var(--grisoscuro);
+}
+
+main section article h4 {
     
-     color:black; 
+     display: none;
+    margin-top: 20px; 
+    font-size: var(--descuentoydescripcion);
+    color: var(--grisoscuro);
+   }
+
+   /* tablet */
+@media (min-width:461px){
+   
+    main section article{
+        box-shadow: 0 0 10px var(--grisoscuro);
+    }
+
+    main section article h4{
+    display:block;
+    }
+
+
 }
 
+
+
+
+
+/* desktop */
+@media (min-width:769px){
+
+}

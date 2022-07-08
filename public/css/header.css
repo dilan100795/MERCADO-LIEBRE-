@@ -1,7 +1,8 @@
 
 .home header{
     background-color: var(--amarillo);
-    
+    padding: 20px 0;
+    font-size:var(--cuerpo-de-texto);
 }
 
 .home header .main-header{
@@ -15,13 +16,19 @@
     margin-top: 20px;
     color:black;
 }
+.home header nav{
+    display:none;
+}
 .home header nav ul {
-    margin-bottom: 15px;
+    margin: 0 0 20px;
+}
+.home header ul i{
+    margin: 0 3px;
 }
 .home header nav ul li a{
     color: black;
 }
-.burguer-menu{
+header .burguer-menu{
     text-align: center;
     
 }
@@ -30,8 +37,27 @@
     background-color: var(--celeste);
     color:white;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border-radius: 7px;
      width: 50px;
     height: 50px;
+}
+
+
+@media (min-width:461px){
+   
+  header .burguer-menu{
+    display:none;
+  }
+   .home header nav{
+    display:block;
+  }
+
+}
+
+
+
+/* desktop */
+@media (min-width:769px){
+
 }

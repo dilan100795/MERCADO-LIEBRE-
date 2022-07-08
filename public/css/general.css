@@ -11,4 +11,5 @@
 body{
     font-family: var(--roboto);
     font-size: var(--cuerpo-de-texto);
+    background-color: var(--grisclaro);
 }
