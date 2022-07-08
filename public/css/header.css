@@ -10,9 +10,10 @@
 .home header .main-header .logo{
   width: 50%;
 }
-.home header p{
+.home header .slogan{
     text-align: 20px;
     margin-top: 20px;
+    color:black;
 }
 .home header nav ul {
     margin-bottom: 15px;

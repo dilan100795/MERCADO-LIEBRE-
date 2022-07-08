@@ -5,8 +5,14 @@
     --amarillo: #EAC926;
     --azul: #03264C;
     --celeste: #1259c3;
-    --grisoscuro : #666;
+    --grisoscuro: #666;
     --grisclaro: #ebebeb;
     --verde: #39b54a;
-   --roboto: 'Roboto', sans-serif;
+
+    --roboto: 'Roboto', sans-serif;
+    --cuerpo-de-texto: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentoydescripcion: 16px;
+
 }

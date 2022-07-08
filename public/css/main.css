@@ -17,8 +17,16 @@ main section h2{
     font-size: 24px;  
 }
 main section h3{
-    font-size: 18px;  
+    font-size: 18px; 
+    color: var(--grisoscuro); 
 }
 main section h4{
-    font-size: 16px;  
+    font-size: 16px;  color: var(--grisoscuro);
 }
+
+
+main section h4:last-child{
+    
+     color:black; 
+}
+

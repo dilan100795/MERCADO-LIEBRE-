@@ -1,18 +1,27 @@
-footer{
+footer {
+    padding: 20px 15px 10px;
+}
+
+footer section {
+
     text-align: center;
+    margin-bottom: 40px;
+    padding: 0 30px;
 }
 
-footer .pieinfo{
-    padding: 40px 40px 25px;
-
+footer section:last-child {
+    text-align: start;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-footer .pieinfo .iconofooter{
+footer section i {
     color: var(--celeste);
-    text-align: center;
     font-size: 2em;
     margin-bottom: 10px;
+
 }
-footer .copyrigth{
-    margin: 15px 0 20px;
+footer section h3,p{
+    color: var(--grisoscuro);
 }
+
