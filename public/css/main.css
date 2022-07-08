@@ -14,14 +14,14 @@ main section article img{
     width: 100%;
 }
 main section h2{
-    font-size: 24px;  
+    font-size: var(--titulares);  
 }
 main section h3{
-    font-size: 18px; 
+    font-size: var(--precios); 
     color: var(--grisoscuro); 
 }
 main section h4{
-    font-size: 16px;  color: var(--grisoscuro);
+    font-size: var(--descuentoydescripcion);  color: var(--grisoscuro);
 }
 
 
