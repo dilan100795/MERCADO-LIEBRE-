@@ -1,63 +1,153 @@
 
-.home header{
+.header{
     background-color: var(--amarillo);
-    padding: 20px 0;
-    font-size:var(--cuerpo-de-texto);
 }
-
-.home header .main-header{
-    padding: 25px;
+.header .top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding: 36px 30px;
 }
-.home header .main-header .logo{
-  width: 50%;
+.logo{
+    max-width: 47%;
 }
-.home header .slogan{
-    text-align: 20px;
-    margin-top: 20px;
-    color:black;
+.logo img{
+    width: 100%;
+    min-width: 100px;
 }
-.home header nav{
-    display:none;
+.buscador{
+    margin-left: 3%;
+    width: 47%;
+    position: relative;
 }
-.home header nav ul {
-    margin: 0 0 20px;
+.buscador input{
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
 }
-.home header ul i{
-    margin: 0 3px;
+.buscador button{
+    color: var(--grisOscuro);
+    font-size: 19px;
+    position: absolute;
+    height: 47px;
+    padding: 0 5px;
+    right: 0;
+    top: 0;
+    border: none;
+    background-color: white;
+    border-radius: 0px 8px 8px 0px;
 }
-.home header nav ul li a{
+.header h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header nav ul{
+    margin: 0;
+    padding: 0 0 20px;
+    /* ocultar el nav ul */
+    display: none;
+}
+.header nav ul li a{
+    text-decoration: none;
     color: black;
 }
-header .burguer-menu{
+.hamburger{
+    margin-top: 20px;
     text-align: center;
-    
-}
 
-.burguer-menu button{
-    background-color: var(--celeste);
-    color:white;
-    font-size: 25px;
-    margin-bottom: 5px;
-    border-radius: 7px;
-     width: 50px;
+}
+.hamburger button{
+    width: 50px;
     height: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: var(--celeste);
 }
 
-
-@media (min-width:461px){
-   
-  header .burguer-menu{
-    display:none;
-  }
-   .home header nav{
-    display:block;
-  }
-
+/* tablet */
+@media (min-width: 461px){
+    .header section .contenedor .logo img{
+        max-width: 400px;
+    }
 }
-
-
+/* intermedio */
+@media (min-width: 585px){
+    .header nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+    .header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header nav ul li:last-child{
+        margin-right: 0;
+    }
+    .header nav ul li{
+        margin-right: 15px;
+    }
+    .header nav ul li a{
+        font-size: 12px;
+    }
+    .hamburger{
+        display: none;
+    }
+}
 
 /* desktop */
-@media (min-width:769px){
+@media (min-width: 769px){
+    .header section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 30px 20px 30px;
+    }
+    .header section .top{
+        padding: 0;
+        width: 60%;
+        justify-content: flex-start;
+    }
+    .header section .top .logo{
+        max-width: 54%;
+    }
+    .header section .buscador{
+        max-width: 43%;
+        padding: 0;
+    }
+    .buscador input{
+        width: 80%;
+        font-size: 16px;
+        padding: 2px ;
+        border: 1px solid var(--grisOscuro);
+        border-radius: 0;
+    }
+    .buscador button{
+        color: var(--grisOscuro);
+        font-size: 16px;
+        position:initial;
+        height: 27px;
+        width: 27px;
+        padding: 2px;
+        right:auto;
+        top:auto;
+        border: 1px solid var(--grisOscuro);
+        border-radius: 4px;
+        background-color: var(--grisClaro);
+    }
+    .header section h3{
+        margin: 0;
+        font-size: 14px;
+    }
+    .header nav ul li a{
+        font-size: 16px;
+    }
 
 }

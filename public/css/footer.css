@@ -1,29 +1,58 @@
-footer {
-    padding: 20px 15px 10px;
-    background-color: white;
+.footer{
+    background-color: white;   
 }
-
-footer section {
-
+.footer div{
     text-align: center;
-    margin-bottom: 40px;
-    padding: 0 30px;
+    margin-bottom: 20px;
+    font-size: var(--cuerposDeTexto);
+    max-width: 375px;
 }
-
-footer section:last-child {
-    text-align: start;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-footer section i {
+.footer div i{
+    margin-top: 50px;
+    font-size: 30px;
     color: var(--celeste);
-    font-size: 2em;
-    margin-bottom: 10px;
-
 }
-footer section h3,footer section p{
-    color: var(--grisoscuro);
-
+.footer div i:hover{
+    color:navy;
+    transition: all 0.6s;
+}
+.footer div h2{
+    margin: 10px 0 0;
+    color: var(--grisOscuro);
+}
+.footer div p{
+    color: var(--grisOscuro);
+    margin: 0;
+    padding: 0 66px;
+}
+#copyright{
+    font-size: var(--cuerposDeTexto);
+    padding: 15px;
+    margin: 0;
 }
 
+/* tablet */
+@media (min-width:461px){
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+       }
+       .footer div{
+        margin-top: 20px;
+        padding: 5px 5px 5px 8px;
+        max-width: 33%;
+        border-left: 2px solid var(--grisClaro);
+       }
+       .footer div:first-child{
+        border-left: 0;
+       }
+       .footer div p{
+        padding: 0;
+       }
+}
+
+/* desktop */
+@media (min-width:769px){
+    
+}
