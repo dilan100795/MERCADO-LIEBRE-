@@ -1,15 +1,30 @@
 *{
+    font-family: var(--fuenteTipografico);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+   
+body{
     margin: 0;
     padding: 0;
-   
+    background-color: var(--grisClaro);
 }
-    
-
-
-
-body{
-    font-family: var(--roboto);
-    font-size: var(--cuerpo-de-texto);
-    background-color: var(--grisclaro);
+.titulares{
+    font-size: var(--titulares);
+    color: var(--grisOscuro);
+    margin: 10px 0;
 }
+.precios{
+    font-size: var(--precios);
+    color: var(--grisOscuro);
+    font-weight: bold;
+}
+.descuentos{
+    font-size: var(--descuentos);
+    color: var(--verde);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
